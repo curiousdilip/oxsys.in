@@ -52,11 +52,11 @@ export default function Home({ Home }) {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="hero-content">
-                <h1 class="fw-bold display-5">Get Fully Control and Visibility your Company</h1>
-                <p class="lead">Proactively coordinate quality quality vectors vis-a-vis supply chains. Quickly engage client-centric web services.</p>
+                <h1>A Product of SuVi Enterprises</h1>
+                <p>Proactively coordinate quality quality vectors v  is-a-vis supply chains. Quickly engage client-centric web services.</p>
                 <div className="cta-btns mt-5">
-                  <a class="btn btn-primary me-3" href="/request-demo">Request For Demo</a>
-                  <a class="btn btn-secondary me-3" href="/watch-demo">Watch Demo</a>
+                  <a class="btn btn-primary me-3" href="/">Request For Demo</a>
+                  <a class="btn btn-secondary me-3" href="/">Watch Demo</a>
                 </div>
 
                 <div className="row client">
@@ -73,7 +73,7 @@ export default function Home({ Home }) {
                 <Image
                   src={oxsysProduct}
                   alt="Product"
-                  className=""
+                  className="img-fluid"
                   width="500"
                   height="500"
                 />

@@ -121,6 +121,10 @@
     margin-bottom: 120px;
 }
 
+#products .product-box:last-child {
+    margin-bottom: 0;
+}
+
 #products .description-box {
     background-color: lightblue;
     padding: 20px;
@@ -160,4 +164,56 @@
 #compare .description-box p {
     margin-bottom: .5rem;
     width: 100%;
+}
+
+@media (max-width:768px) {
+    #hero {
+        height: auto;
+    }
+
+    .hero-content {
+        margin-top: 60px;
+        height: auto;
+    }
+
+    #features {
+        padding: 60px 0;
+    }
+
+    #features .boxes {
+        grid-template-columns: auto;
+    }
+
+    #testimonials {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    #testimonials .reviews .review-box {
+        margin: 0 20px;
+    }
+
+    #products {
+        padding: 60px 0;
+    }
+
+    #products .product-box {
+        margin-bottom: 60px;
+    }
+
+    #compare {
+        padding: 60px 0;
+    }
+
+    #compare .our-generator h2 {
+        margin-top: 60px;
+    }
+
+    footer .footer-content span {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
 }
