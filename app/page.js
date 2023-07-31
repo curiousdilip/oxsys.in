@@ -1,13 +1,49 @@
+"use client"
 import Image from 'next/image'
 import Header from './components/Header'
 import './home.css'
 import oxsysProduct from '../public/assets/img/product/oxsys main product.png'
 import oxyGen from '../public/assets/img/product/amcoxygenerator.png'
+import PSA from '../public/assets/img/Conventional-PSA-Plant.png'
 import Box from './components/box'
+import CardBox from './components/cardBox'
 import Footer from './components/Footer'
 import Product from './components/Product'
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function Home({ Home }) {
+  const review = [
+    {
+      id: 1,
+      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
+      pname: "Dilip",
+      designation: "Developer"
+    },
+    {
+      id: 3,
+      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta. ",
+      pname: "Dilip",
+      designation: "Developer"
+    },
+    {
+      id: 3,
+      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
+      pname: "Dilip",
+      designation: "Developer"
+    },
+    {
+      id: 4,
+      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
+      pname: "Dilip",
+      designation: "Developer"
+    },
+  ]
   return (
     <>
       <Header />
@@ -61,10 +97,62 @@ export default function Home({ Home }) {
             <div className="container">
               <div className="col-md-12">
                 <div className="boxes">
-                  <Box />
+                  {/* <Box /> */}
+                  <CardBox />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>What’s Clients Say
+                </h2>
+                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <Swiper
+              slidesPerView={1}
+              navigation={true}
+              spaceBetween={10}
+              loop={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Navigation, Pagination]}
+              className="reviews"
+            >
+              {review.map((item) => (
+                <SwiperSlide>
+                  <div class="review-box " key={item.id}>
+                    <p>{item.review}</p>
+
+                    <div className="author">
+                      <h3>{item.pname}</h3>
+                      <p>{item.designation}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+            </Swiper>
           </div>
         </div>
       </section>
@@ -81,12 +169,12 @@ export default function Home({ Home }) {
                 <h2 className='text-center'>
                   Conventional PSA Plant
                 </h2>
-                <div className="text-center">
+                <div className="text-center mt-4 mb-4">
                   <Image
-                    src={oxyGen}
+                    src={PSA}
                     alt="Project Banner"
                     className="img-fluid "
-                    width="300"
+                    width="700"
                     height="320"
                   />
                 </div>
@@ -117,8 +205,8 @@ export default function Home({ Home }) {
                     height="320"
                   />
                 </div>
-                <div className="description-box">
-                  <p> functionality - Parallel ( output is independent of every part)</p>
+                <div className="description-box mt-1">
+                  <p> Functionality - Parallel (output is independent of every part)</p>
                   <p> PSA Unit - Multiple (5 to 14)</p>
                   <p> Power consumption - Low (50% of equivalent PSA Plant)</p>
                   <p> Operating Pressure - very low(2 bar)</p>

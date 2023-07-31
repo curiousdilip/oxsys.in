@@ -12,9 +12,12 @@ const Footer = () => {
                                 <h3>OXSYS.IN</h3>
                                 <p>A Product SuVi Enterprises <br /><span>Medical Equipments Manufacturer and Supplier</span></p>
                                 <div className="address">
-                                    <p>Address- A3/5, khasra no. 70/17 A-block, kaushik Enclave,<br />
-                                        Burari, Delhi - 110084 ( india)<br />
-                                        contact No. Lalit +91-95 55 25 65 07, Suraj : +91-9999 309 837<br />
+                                    <p>SuVi Enterprises<br />
+                                        PP 30, Second Floor, Lano No. 10,
+                                        <br />
+                                        Anand Parbat Industrial Area<br />
+                                        New Rohtak Road <br />
+                                        New Delhi 110005<br />
                                         Email : info@oxsys.in | Website. www.oxsys.in</p>
                                 </div>
                             </div>

@@ -66,8 +66,8 @@ const Header = ({ theme }) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link href="/work" className={activePath === '/work' ? 'active' : ''}>Home</Nav.Link>
                             <Nav.Link href="#features" className={activePath === '#features' ? 'active' : ''}>Features</Nav.Link>
+                            <Nav.Link href="#testimonials" className={activePath === '#testimonials' ? 'active' : ''}>Testimonials</Nav.Link>
                             <Nav.Link href="#products" className={activePath === '#products' ? 'active' : ''}>Products</Nav.Link>
 
                         </Nav>
