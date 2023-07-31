@@ -1,8 +1,11 @@
 "use client"
+import { use, useState } from 'react'
 import Image from 'next/image'
 import Header from './components/Header'
 import './home.css'
 import oxsysProduct from '../public/assets/img/product/oxsys main product.png'
+import faqImg from '../public/assets/img/product/oxsys main product.png'
+
 import oxyGen from '../public/assets/img/product/amcoxygenerator.png'
 import PSA from '../public/assets/img/Conventional-PSA-Plant.png'
 import Box from './components/box'
@@ -17,33 +20,15 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
+import { gallery, review } from './data/home'
+
 export default function Home({ Home }) {
-  const review = [
-    {
-      id: 1,
-      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-      pname: "Dilip",
-      designation: "Developer"
-    },
-    {
-      id: 3,
-      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta. ",
-      pname: "Dilip",
-      designation: "Developer"
-    },
-    {
-      id: 3,
-      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-      pname: "Dilip",
-      designation: "Developer"
-    },
-    {
-      id: 4,
-      review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-      pname: "Dilip",
-      designation: "Developer"
-    },
-  ]
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentindex, setCurrentindex] = useState(null);
+  const handleClick = (item, index) => {
+    setCurrentindex(index);
+    setClickedImg(item.link);
+  }
   return (
     <>
       <Header />
@@ -55,8 +40,8 @@ export default function Home({ Home }) {
                 <h1>A Product of SuVi Enterprises</h1>
                 <p>Proactively coordinate quality quality vectors v  is-a-vis supply chains. Quickly engage client-centric web services.</p>
                 <div className="cta-btns mt-5">
-                  <a class="btn btn-primary me-3" href="/">Request For Demo</a>
-                  <a class="btn btn-secondary me-3" href="/">Watch Demo</a>
+                  <a className="btn btn-primary me-3" href="/">Request For Demo</a>
+                  <a className="btn btn-secondary me-3" href="/">Watch Demo</a>
                 </div>
 
                 <div className="row client">
@@ -74,8 +59,8 @@ export default function Home({ Home }) {
                   src={oxsysProduct}
                   alt="Product"
                   className="img-fluid"
-                  width="500"
-                  height="500"
+                  width={500}
+                  height={500}
                 />
               </div>
 
@@ -140,8 +125,8 @@ export default function Home({ Home }) {
               className="reviews"
             >
               {review.map((item) => (
-                <SwiperSlide>
-                  <div class="review-box " key={item.id}>
+                <SwiperSlide key={item.id}>
+                  <div className="review-box " >
                     <p>{item.review}</p>
 
                     <div className="author">
@@ -161,6 +146,79 @@ export default function Home({ Home }) {
           <Product />
         </div>
       </section>
+      <section id="faq">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>Frequently Asked Questions
+                </h2>
+                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+              </div>
+            </div>
+          </div>
+          <div className="row align-items-center justify-content-between">
+            <div className="col-lg-5 col-md-12">
+              <div class="faq-wrapper">
+                <div class="faq-item mb-5">
+                  <h5><span class="h3 text-primary me-2">1.</span> How does back pricing work?</h5>
+                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                </div>
+                <div class="faq-item mb-5">
+                  <h5><span class="h3 text-primary me-2">2.</span> How does back pricing work?</h5>
+                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                </div>
+                <div class="faq-item mb-5">
+                  <h5><span class="h3 text-primary me-2">3.</span> How does back pricing work?</h5>
+                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="text-center">
+                <Image
+                  src={faqImg}
+                  className='img-fluid'
+                />
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section id="gallery">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>Gallery
+                </h2>
+                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="gallery">
+                {gallery.map((item) => (
+                  <div className="img-box" key={item.id}>
+                    <Image
+                      src={item.image}
+                      alt=""
+                      className="img-fluid"
+                      width={500}
+                      height={500}
+                      onClick={() => handleClick(item, index)}
+                    />
+                    <h2>{item.imgText}</h2>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
       <section id="compare">
         <div className="container">
           <div className="row">
@@ -173,15 +231,15 @@ export default function Home({ Home }) {
                   <Image
                     src={PSA}
                     alt="Project Banner"
-                    className="img-fluid "
-                    width="700"
-                    height="320"
+                    className="img-fluid"
+                    width={700}
+                    height={320}
                   />
                 </div>
                 <div className="description-box">
-                  <p> functionality - Linear ( output is dependent on each part)</p>
+                  <p> Functionality - Linear ( output is dependent on each part)</p>
                   <p> PSA Unit - Single</p>
-                  <p> Power consumption - High</p>
+                  <p> Power Consumption - High</p>
                   <p> Operating Pressure - Hight ( 8-10 bar)</p>
                   <p> brealdown Percentage - 100%</p>
                   <p> Output Pressure - fix(4 to 4.5 bar)</p>
@@ -200,9 +258,9 @@ export default function Home({ Home }) {
                   <Image
                     src={oxyGen}
                     alt="Project Banner"
-                    className="img-fluid "
-                    width="300"
-                    height="320"
+                    className=" "
+                    width={300}
+                    height={320}
                   />
                 </div>
                 <div className="description-box mt-1">

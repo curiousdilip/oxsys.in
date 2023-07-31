@@ -50,8 +50,8 @@ const Product = ({ layout }) => {
     return (
         <>
             {product.map((item) => (
-                <div className="row product-box justify-content-between align-items-center">
-                    <div className="col-md-6" key={item.id}>
+                <div className="row product-box justify-content-between align-items-center" key={item.id}>
+                    <div className="col-md-6">
                         <h2>{item.modelName}</h2>
                         <div className="description-box">
                             <h3 className="text-center">Specification</h3>
@@ -79,9 +79,9 @@ const Product = ({ layout }) => {
                             <Image
                                 src={item.pMainImg}
                                 alt="Project Banner"
-                                className="w-100 h-100"
-                                width="543"
-                                height="320"
+                                className="img-fluid"
+                                width={543}
+                                height={320}
                             />
                         </div>
                     </div>

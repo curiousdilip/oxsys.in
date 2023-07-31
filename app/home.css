@@ -105,12 +105,18 @@
 
 #products {
     padding: 120px 0;
+    background-color: #f8f9fa;
+
 }
 
 #products .pimage {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#products .pimage img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 #products h2 {
@@ -147,6 +153,51 @@
 #products .benefits h4 {
     font-size: 20px;
 
+}
+
+#faq {
+    padding: 120px 0;
+}
+
+#faq .section-heading {
+    margin-bottom: 50px;
+}
+
+#faq .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#faq .section-heading p {
+    color: #575757;
+}
+
+
+
+#gallery {
+    padding: 120px 0;
+    background: linear-gradient(90deg, #071c4d, #002d97) !important;
+}
+
+#gallery .section-heading {
+    margin-bottom: 50px;
+}
+
+#gallery .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+
+#gallery .section-heading p {
+    color: #fff;
+}
+
+#gallery .gallery {
+    background-color: #fff;
+    position: relative;
 }
 
 #compare {
@@ -201,13 +252,22 @@
         margin-bottom: 60px;
     }
 
+    #faq {
+        padding: 60px 0;
+    }
+
     #compare {
         padding: 60px 0;
+    }
+
+    #compare img {
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
     }
 
     #compare .our-generator h2 {
         margin-top: 60px;
     }
+
 
     footer .footer-content span {
         font-size: 10px;

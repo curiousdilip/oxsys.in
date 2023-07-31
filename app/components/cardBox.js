@@ -46,8 +46,8 @@ const cardBox = () => {
 
         <>
             {box.map((item) => (
-                <div class="thecard " key={item.id}>
-                    <div class="thefront">
+                <div className="thecard " key={item.id}>
+                    <div className="thefront">
                         <Image
                             src={item.cardImg}
                             width={50}
@@ -57,7 +57,7 @@ const cardBox = () => {
                         <h2>{item.cardTitle}</h2>
                     </div>
 
-                    <div class="theback">
+                    <div className="theback">
                         <h2>{item.cardTitle}</h2>
                         <p>{item.cardDescription}</p>
                     </div>
