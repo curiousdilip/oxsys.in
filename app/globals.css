@@ -28,14 +28,7 @@ body {
     color: white;
 }
 
-.mainHeader .navbar-collapse {
-    background: linear-gradient(90deg, #071c4d, #002d97) !important;
-}
 
-.scrolled .navbar-collapse {
-    padding: 20px;
-    background: #fff !important;
-}
 
 .mainHeader .navbar-brand h3 {
     margin: 0;
@@ -92,6 +85,15 @@ body {
 
     .mainHeader .nav-link {
         margin: 0;
+    }
+
+    .mainHeader .navbar-collapse {
+        background: linear-gradient(90deg, #071c4d, #002d97);
+    }
+
+    .scrolled .navbar-collapse {
+
+        background: #fff;
     }
 }
 

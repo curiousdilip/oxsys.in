@@ -159,17 +159,17 @@ export default function Home({ Home }) {
           </div>
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-5 col-md-12">
-              <div class="faq-wrapper">
-                <div class="faq-item mb-5">
-                  <h5><span class="h3 text-primary me-2">1.</span> How does back pricing work?</h5>
+              <div className="faq-wrapper">
+                <div className="faq-item mb-5">
+                  <h5><span className="h3 text-primary me-2">1.</span> How does back pricing work?</h5>
                   <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
                 </div>
-                <div class="faq-item mb-5">
-                  <h5><span class="h3 text-primary me-2">2.</span> How does back pricing work?</h5>
+                <div className="faq-item mb-5">
+                  <h5><span className="h3 text-primary me-2">2.</span> How does back pricing work?</h5>
                   <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
                 </div>
-                <div class="faq-item mb-5">
-                  <h5><span class="h3 text-primary me-2">3.</span> How does back pricing work?</h5>
+                <div className="faq-item mb-5">
+                  <h5><span className="h3 text-primary me-2">3.</span> How does back pricing work?</h5>
                   <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
                 </div>
               </div>
@@ -179,6 +179,7 @@ export default function Home({ Home }) {
                 <Image
                   src={faqImg}
                   className='img-fluid'
+                  alt='Faq Image'
                 />
 
               </div>
