@@ -73,6 +73,7 @@ const Header = ({ theme }) => {
                             <Nav.Link href="#testimonials" className={activePath === '#testimonials' ? 'active' : ''}>Testimonials</Nav.Link>
                             <Nav.Link href="#products" className={activePath === '#products' ? 'active' : ''}>Products</Nav.Link>
                             <Nav.Link href="#faq" className={activePath === '#faq' ? 'active' : ''}>Faq</Nav.Link>
+                            <Nav.Link href="#gallery" className={activePath === '#gallery' ? 'active' : ''}>Gallery</Nav.Link>
                             <Nav.Link href="#compare" className={activePath === '#compare' ? 'active' : ''}>Comparision</Nav.Link>
                         </Nav>
                         <Button variant="primary">

@@ -21,14 +21,19 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
 import { gallery, review } from './data/home'
+import { Gallery } from "react-grid-gallery";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Home({ Home }) {
-  const [clickedImg, setClickedImg] = useState(null);
-  const [currentindex, setCurrentindex] = useState(null);
-  const handleClick = (item, index) => {
-    setCurrentindex(index);
-    setClickedImg(item.link);
-  }
+  const [index, setIndex] = useState(-1);
+  const slides = gallery.map(({ original, width, height }) => ({
+    src: original,
+    width,
+    height,
+  }));
+
+  const handleClick = (index, item) => setIndex(index);
   return (
     <>
       <Header />
@@ -187,7 +192,7 @@ export default function Home({ Home }) {
           </div>
         </div>
       </section>
-      {/* <section id="gallery">
+      <section id="gallery">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10 ">
@@ -201,25 +206,21 @@ export default function Home({ Home }) {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <div className="gallery">
-                {gallery.map((item) => (
-                  <div className="img-box" key={item.id}>
-                    <Image
-                      src={item.image}
-                      alt=""
-                      className="img-fluid"
-                      width={500}
-                      height={500}
-                      onClick={() => handleClick(item, index)}
-                    />
-                    <h2>{item.imgText}</h2>
-                  </div>
-                ))}
-              </div>
+              <Gallery
+                images={gallery}
+                onClick={handleClick}
+                enableImageSelection={false}
+              />
+              <Lightbox
+                slides={slides}
+                open={index >= 0}
+                index={index}
+                close={() => setIndex(-1)}
+              />
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section id="compare">
         <div className="container">
           <div className="row">
