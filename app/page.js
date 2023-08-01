@@ -200,7 +200,6 @@ export default function Home({ Home }) {
                 <h2>Gallery
                 </h2>
                 <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
-
               </div>
             </div>
           </div>
