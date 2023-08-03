@@ -36,6 +36,16 @@
     font-size: 1.0625rem;
 }
 
+.hero-content .client-names {
+    display: flex;
+}
+
+.hero-content .client p {
+
+    margin: 0;
+    margin-right: 20px;
+}
+
 .product-image img {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
@@ -200,6 +210,17 @@
     position: relative;
 }
 
+
+#compare .section-heading {
+    margin-bottom: 50px;
+}
+
+#compare .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 #compare {
     padding: 120px 0;
     background-color: #f8f9fa;
@@ -225,6 +246,16 @@
     .hero-content {
         margin-top: 60px;
         height: auto;
+    }
+
+    .hero-content .client p {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .hero-content .client-names {
+        display: flex;
+        flex-direction: column;
     }
 
     #features {

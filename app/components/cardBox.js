@@ -12,11 +12,19 @@ const cardBox = () => {
         },
         {
             id: 2,
-            cardImg: "/assets/img/quick-install.svg",
-            cardImgAlt: "Quick Installation",
-            cardTitle: "Quick Installation",
-            cardDescription: "gets installed within few hours unlike oxygen plants"
-        }, {
+            cardImg: "/assets/img/dependable.svg",
+            cardImgAlt: "Dependable",
+            cardTitle: "Dependable",
+            cardDescription: "if one unit fails the equipment doesn't stop"
+        }
+        // {
+        //     id: 2,
+        //     cardImg: "/assets/img/quick-install.svg",
+        //     cardImgAlt: "Quick Installation",
+        //     cardTitle: "Quick Installation",
+        //     cardDescription: "gets installed within few hours unlike oxygen plants"
+        // },
+        , {
             id: 3,
             cardImg: "/assets/img/support.svg",
             cardImgAlt: "Customer Support",
@@ -37,11 +45,12 @@ const cardBox = () => {
         }
         , {
             id: 6,
-            cardImg: "/assets/img/dependable.svg",
-            cardImgAlt: "Dependable",
-            cardTitle: "Dependable",
-            cardDescription: "if one unit fails the equipment doesn't stop"
-        }]
+            cardImg: "/assets/img/eco-friendly.svg",
+            cardImgAlt: "Lesser Running Cost",
+            cardTitle: "Lesser Running Cost",
+            cardDescription: "works 24 hours a day 365 day a year"
+        }
+    ]
     return (
 
         <>

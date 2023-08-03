@@ -42,18 +42,20 @@ export default function Home({ Home }) {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="hero-content">
-                <h1>A Product of SuVi Enterprises</h1>
-                <p>Proactively coordinate quality quality vectors v  is-a-vis supply chains. Quickly engage client-centric web services.</p>
+                {/* <h1>A Product of <br />SuVi Enterprises</h1> */}
+                <h1>Advance Modular Compact PSA Oxygen Generator</h1>
+                <p>Experience the Future of Oxygen Generation - Say Goodbye to Costly Oxygen Cylinders and Embrace Savings with Peace of Mind!</p>
                 <div className="cta-btns mt-5">
-                  <a className="btn btn-primary me-3" href="/">Request For Demo</a>
+                  <a className="btn btn-primary me-3" href="tel:+919555256507">Request For Demo</a>
                   <a className="btn btn-secondary me-3" href="/">Watch Demo</a>
                 </div>
 
                 <div className="row client">
                   <h6>Our Top Clients</h6>
-                  <div className="d-flex">
-                    <p>Mankind</p>
-                    <p>AIMS</p>
+                  <div className=" client-names">
+                    <p>Santom Hospital Prashant</p>
+                    <p>Sanakar Hospital</p>
+                    <p>Medwin Hospital</p>
                   </div>
                 </div>
               </div>
@@ -78,8 +80,8 @@ export default function Home({ Home }) {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
-                <h2>With all the Features You Need</h2>
-                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+                <h2>Features</h2>
+                <p>Uncover the Remarkable Capabilities of the OxSys System</p>
               </div>
             </div>
           </div>
@@ -100,9 +102,9 @@ export default function Home({ Home }) {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
-                <h2>What’s Clients Say
+                <h2>Hear from Satisfied Clients
                 </h2>
-                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+                <p>Discover What People are Saying About Our Oxygen Generation Solutions</p>
               </div>
             </div>
           </div>
@@ -166,16 +168,20 @@ export default function Home({ Home }) {
             <div className="col-lg-5 col-md-12">
               <div className="faq-wrapper">
                 <div className="faq-item mb-5">
-                  <h5><span className="h3 text-primary me-2">1.</span> How does back pricing work?</h5>
-                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                  <h5><span className="h3 text-primary me-2">1.</span>How does the OxSys oxygen generator work?
+                  </h5>
+                  <p>The OxSys oxygen generator utilizes Pressure Swing Adsorption (PSA) technology. Ambient air is drawn into the system and passed through a bed of adsorbent material, which selectively removes nitrogen and other impurities, leaving behind a stream of high-purity oxygen. This oxygen is then stored and made available for various applications.</p>
                 </div>
                 <div className="faq-item mb-5">
-                  <h5><span className="h3 text-primary me-2">2.</span> How does back pricing work?</h5>
-                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                  <h5><span className="h3 text-primary me-2">2.</span> How much saving is insured by the largest model of oxsys?</h5>
+                  <p className='mb-0'>
+                    Annually, potential savings of at least 25 Lakh INR can be achieved by considering an assumed oxygen cylinder (D-type, 47.6 liters) refill rate of INR 300 per cylinder.
+                  </p>
+
                 </div>
                 <div className="faq-item mb-5">
-                  <h5><span className="h3 text-primary me-2">3.</span> How does back pricing work?</h5>
-                  <p>Progressively e-enable collaborative inexpensive supply chains. Efficiently maintain economically methods of empowerment for synergistic sound scenarios.</p>
+                  <h5><span className="h3 text-primary me-2">3.</span> Does the system come with a warranty?</h5>
+                  <p>Yes, OxSys generators are typically covered by a comprehensive warranty to ensure customers' peace of mind. The specific terms and conditions of the warranty may vary based on the model and region.</p>
                 </div>
               </div>
             </div>
@@ -199,7 +205,8 @@ export default function Home({ Home }) {
               <div className="section-heading text-center">
                 <h2>Gallery
                 </h2>
-                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+                <p>
+                  Witness the Installation Process of an OxSys Oxygen Generator.</p>
               </div>
             </div>
           </div>
@@ -222,6 +229,13 @@ export default function Home({ Home }) {
       </section>
       <section id="compare">
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>Comparision with Oxygen Plant</h2>
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className="col-md-6">
               <div className="cpp">

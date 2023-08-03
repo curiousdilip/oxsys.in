@@ -77,7 +77,7 @@ const Header = ({ theme }) => {
                             <Nav.Link href="#compare" className={activePath === '#compare' ? 'active' : ''}>Comparision</Nav.Link>
                         </Nav>
                         <Button variant="primary">
-                            <Nav.Link href="/contact" className={activePath === '/contact' ? 'active' : ''}>Get Started</Nav.Link>
+                            <Nav.Link href="tel:+919555256507">Get Started</Nav.Link>
                         </Button>
                     </Navbar.Collapse>
                 </Container>
