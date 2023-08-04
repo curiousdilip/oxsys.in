@@ -21,19 +21,8 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
 import { gallery, review } from './data/home'
-import { Gallery } from "react-grid-gallery";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 
 export default function Home({ Home }) {
-  const [index, setIndex] = useState(-1);
-  const slides = gallery.map(({ original, width, height }) => ({
-    src: original,
-    width,
-    height,
-  }));
-
-  const handleClick = (index, item) => setIndex(index);
   return (
     <>
       <Header />
@@ -131,8 +120,8 @@ export default function Home({ Home }) {
               modules={[Navigation, Pagination]}
               className="reviews"
             >
-              {review.map((item) => (
-                <SwiperSlide key={item.id}>
+              {review.map((item, index) => (
+                <SwiperSlide key={index}>
                   <div className="review-box " >
                     <p>{item.review}</p>
 
@@ -150,6 +139,15 @@ export default function Home({ Home }) {
       </section>
       <section id="products">
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>Products
+                </h2>
+                <p>Our line of Oxsys Machines we offer</p>
+              </div>
+            </div>
+          </div>
           <Product />
         </div>
       </section>
@@ -212,17 +210,30 @@ export default function Home({ Home }) {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <Gallery
-                images={gallery}
-                onClick={handleClick}
-                enableImageSelection={false}
-              />
-              <Lightbox
-                slides={slides}
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
-              />
+              <Swiper
+                slidesPerView={2}
+                navigation={true}
+                spaceBetween={10}
+                loop={true}
+                modules={[Navigation, Pagination]}
+                className="gallery"
+              >
+                {gallery.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      // src={mountains}
+                      width={500}
+                      height={400}
+                      style={{
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </SwiperSlide>
+                ))}
+
+              </Swiper>
             </div>
           </div>
         </div>

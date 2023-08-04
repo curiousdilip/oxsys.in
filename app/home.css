@@ -119,6 +119,24 @@
 
 }
 
+#products .section-heading {
+    margin-bottom: 50px;
+}
+
+#products .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#products .section-heading p {
+    color: #575757;
+}
+
+#products .mobile-products {
+    display: none;
+}
+
 #products .pimage {
     display: flex;
     align-items: center;
@@ -205,9 +223,8 @@
     color: #fff;
 }
 
-#gallery .gallery {
-    background-color: #fff;
-    position: relative;
+#gallery .gallery .swiper-slide {
+    text-align: center;
 }
 
 
@@ -281,6 +298,14 @@
 
     #products .product-box {
         margin-bottom: 60px;
+    }
+
+    #products .mobile-products {
+        display: block;
+    }
+
+    #products .desktop-products {
+        display: none;
     }
 
     #faq {

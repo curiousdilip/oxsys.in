@@ -43,7 +43,8 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="/assets/img/product/oxsys main product.png"
+          content={`https://oxsys-in.vercel.app/assets/img/product/oxsys%20main%20product.png`}
+
         />
       </head>
       <body>{children}</body>

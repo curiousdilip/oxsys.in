@@ -1,5 +1,13 @@
-// import arrowRight from "../../public/assets/img/arrow-right.svg"
 import Image from "next/image";
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+import { product } from "../data/home"
 const Product = ({ layout }) => {
     const product = [
         {
@@ -47,49 +55,103 @@ const Product = ({ layout }) => {
             cytype: "5"
         }
     ]
+
+    const [selectedProduct, setSelectedProduct] = useState(0);
+    const selectedProductData = product[selectedProduct];
     return (
         <>
-            {product.map((item) => (
-                <div className="row product-box justify-content-between align-items-center" key={item.id}>
+            <div className="desktop-products">
+                <div className="row product-box justify-content-between align-items-center">
                     <div className="col-md-6">
-                        <h2>{item.modelName}</h2>
-                        <div className="description-box">
-                            <h3 className="text-center">Specification</h3>
-                            <p>Oxygen Purity : {item.oxyPure}</p>
-                            <p>Output Flow Rate : {item.outFlow}</p>
-                            <p>Outlet Pressure Range : {item.outPre}</p>
-                            <p>Operating Temperature : {item.opTemp}</p>
-                            <p>Input Voltage : {item.inVolt}</p>
-                            <p>Max Power : {item.power}</p>
-                            <p>Weight App. : {item.weight}</p>
-                            <p>Size mm : {item.size}</p>
-                        </div>
-                        <div className="benefits">
-                            <h4>A single unit {item.modelName} generates {item.generates} litres of oxygen per day.</h4>
-                            <h4>this is equal to usable oxygen of {item.cytype} d-type cylinders</h4>
-                        </div>
-
-
+                        <h2>{selectedProductData ? selectedProductData.modelName : ''}</h2>
+                        {selectedProductData && (
+                            <div className="description-box">
+                                <h3 className="text-center">Specification</h3>
+                                <p>Oxygen Purity: {selectedProductData.oxyPure}</p>
+                                <p>Output Flow Rate: {selectedProductData.outFlow}</p>
+                                <p>Outlet Pressure Range: {selectedProductData.outPre}</p>
+                                <p>Operating Temperature: {selectedProductData.opTemp}</p>
+                                <p>Input Voltage: {selectedProductData.inVolt}</p>
+                                <p>Max Power: {selectedProductData.power}</p>
+                                <p>Weight App.: {selectedProductData.weight}</p>
+                                <p>Size mm: {selectedProductData.size}</p>
+                            </div>
+                        )}
+                        {selectedProductData && (
+                            <div className="benefits">
+                                <h4>
+                                    A single unit {selectedProductData.modelName} generates{' '}
+                                    {selectedProductData.generates} litres of oxygen per day.
+                                </h4>
+                                <h4>
+                                    This is equal to usable oxygen of {selectedProductData.cytype} d-type cylinders.
+                                </h4>
+                            </div>
+                        )}
                     </div>
                     <div className="col-md-6">
-
-                        <div className="pimage">
-
-
-                            <Image
-                                src={item.pMainImg}
-                                alt="Project Banner"
-                                className="img-fluid"
-                                width={543}
-                                height={320}
-                            />
-                        </div>
+                        <Swiper
+                            navigation={true}
+                            pagination={{ clickable: true }}
+                            onSlideChange={(swiper) => setSelectedProduct(swiper.activeIndex)}
+                            modules={[Navigation, Pagination]}
+                        >
+                            {product.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <Image
+                                        src={item.pMainImg}
+                                        alt="Product Image"
+                                        width={500}
+                                        height={420}
+                                        layout="contain"
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
-                </div >
-            ))}
+                </div>
+            </div>
+            <div className="mobile-products">
+                {product.map((item) => (
+                    <div className="row product-box justify-content-between align-items-center" key={item.id}>
+                        <div className="col-md-6">
+                            <h2>{item.modelName}</h2>
+                            <div className="description-box">
+                                <h3 className="text-center">Specification</h3>
+                                <p>Oxygen Purity : {item.oxyPure}</p>
+                                <p>Output Flow Rate : {item.outFlow}</p>
+                                <p>Outlet Pressure Range : {item.outPre}</p>
+                                <p>Operating Temperature : {item.opTemp}</p>
+                                <p>Input Voltage : {item.inVolt}</p>
+                                <p>Max Power : {item.power}</p>
+                                <p>Weight App. : {item.weight}</p>
+                                <p>Size mm : {item.size}</p>
+                            </div>
+                            <div className="benefits">
+                                <h4>A single unit {item.modelName} generates {item.generates} litres of oxygen per day.</h4>
+                                <h4>this is equal to usable oxygen of {item.cytype} d-type cylinders</h4>
+                            </div>
+
+
+                        </div>
+                        <div className="col-md-6">
+
+                            <div className="pimage">
+
+
+                                <Image
+                                    src={item.pMainImg}
+                                    alt="Project Banner"
+                                    className="img-fluid"
+                                    width={543}
+                                    height={320}
+                                />
+                            </div>
+                        </div>
+                    </div >
+                ))}
+            </div>
         </>
-
-
     );
 };
 

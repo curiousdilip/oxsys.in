@@ -123,3 +123,8 @@ footer .footer-content span {
 footer .footer-content .address p {
     text-align: left;
 }
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
