@@ -47,6 +47,14 @@ body {
     color: #000;
 }
 
+.scrolled .navbar .nav-link.active {
+    color: #59b3ff;
+}
+
+.mainHeader .navbar .nav-link.active {
+    color: #59b3ff;
+}
+
 .scrolled .navbar .navbar-brand {
     color: #000;
 }
