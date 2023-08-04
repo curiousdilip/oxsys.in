@@ -30,6 +30,15 @@ export const gallery = [
 
 ];
 
+export const certificates = [{
+    src: "/assets/img/certificate/EEC.jpg",
+    alt: "this is sd"
+}, {
+    src: "/assets/img/certificate/UDYAM.jpg",
+    alt: "Udyam"
+}
+]
+
 export const review = [
     {
         review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",

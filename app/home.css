@@ -179,6 +179,37 @@
 
 }
 
+#certifications {
+    padding: 120px 0;
+}
+
+
+#certifications .section-heading {
+    margin-bottom: 50px;
+}
+
+#certifications .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#certifications .section-heading p {
+    color: #575757;
+}
+
+#certifications .certificates {
+
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    justify-content: center;
+    /* grid-template-rows: repeat(5, 1fr); */
+
+}
+
+
 #faq {
     padding: 120px 0;
 }

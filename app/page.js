@@ -20,7 +20,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
-import { gallery, review } from './data/home'
+import { certificates, gallery, review } from './data/home'
 
 export default function Home({ Home }) {
   return (
@@ -149,6 +149,38 @@ export default function Home({ Home }) {
             </div>
           </div>
           <Product />
+        </div>
+      </section>
+      <section id="certifications">
+        <div className="container">
+          <div className="row">
+            <div className="row justify-content-center">
+              <div className="col-lg-6 col-md-10 ">
+                <div className="section-heading text-center">
+                  <h2>Certifications
+                  </h2>
+                  <p>We are endorsed by India's top certifications.</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <div className="certificates">
+                  {certificates.map((item, index) => (
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={300}
+                      height={500}
+                      style={{
+                        objectFit: 'contain',
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="faq">
