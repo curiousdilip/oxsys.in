@@ -179,6 +179,11 @@
 
 }
 
+#clients {
+    background: linear-gradient(90deg, #071c4d, #002d97) !important;
+    padding: 120px 0;
+}
+
 #certifications {
     padding: 120px 0;
 }
@@ -333,6 +338,10 @@
 
     #products .desktop-products {
         display: none;
+    }
+
+    #certifications .certificates {
+        grid-template-columns: auto;
     }
 
     #faq {
