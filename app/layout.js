@@ -2,7 +2,7 @@
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
-import ogImage from "../public/assets/img/product/oxsys main product.png"
+import ogImage from "../public/assets/img/product/oxsys-main-product.png"
 
 export default function RootLayout({ children }) {
   return (

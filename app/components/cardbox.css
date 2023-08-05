@@ -26,10 +26,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .thefront h2 {
     text-align: center;
+    margin-top: 20px;
 }
 
 .theback {

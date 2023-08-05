@@ -136,3 +136,47 @@ footer ul {
     list-style: none;
     padding-left: 0;
 }
+
+footer .bfooter {
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+footer .bfooter p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer .bfooter .copy {
+    text-align: left;
+}
+
+footer .bfooter .flinks {
+    text-align: right;
+}
+
+footer .bfooter .flinks a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+footer .bfooter .flinks a:last-child {
+
+    margin-right: 0;
+}
+
+@media (max-width:768px) {
+
+    footer .bfooter .copy {
+        text-align: center;
+    }
+
+    footer .bfooter .flinks {
+        text-align: center;
+    }
+}

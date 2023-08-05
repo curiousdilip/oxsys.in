@@ -12,7 +12,7 @@ const Product = ({ layout }) => {
     const product = [
         {
             id: 1,
-            pMainImg: "/assets/img/product/oxsys main product.png",
+            pMainImg: "/assets/img/product/oxsys-main-product.png",
             oxyPure: " 93 ± 3%",
             outFlow: "120 LPM",
             opTemp: "10°C to 52°C",
@@ -103,7 +103,9 @@ const Product = ({ layout }) => {
                                         alt="Product Image"
                                         width={500}
                                         height={420}
-                                        layout="contain"
+                                        style={{
+                                            objectFit: "contain",
+                                        }}
                                     />
                                 </SwiperSlide>
                             ))}

@@ -3,12 +3,12 @@ import { use, useState } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import "./home.css";
-import oxsysProduct from "../public/assets/img/product/oxsys main product.png";
-import faqImg from "../public/assets/img/product/oxsys main product.png";
+import oxsysProduct from "../public/assets/img/product/oxsys-main-product.png";
+import faqImg from "../public/assets/img/product/oxsys-main-product.png";
 
 import oxyGen from "../public/assets/img/product/amcoxygenerator.png";
 import PSA from "../public/assets/img/Conventional-PSA-Plant.png";
-import Box from "./components/box";
+
 import CardBox from "./components/cardBox";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
@@ -63,6 +63,7 @@ export default function Home({ Home }) {
                   src={oxsysProduct}
                   alt="Product"
                   className="img-fluid"
+                  priority={true}
                   width={500}
                   height={500}
                 />
@@ -176,7 +177,7 @@ export default function Home({ Home }) {
                     <Image key={index}
                       src={item.src}
                       alt={item.alt}
-                      width={300}
+                      width={290}
                       height={400}
                       style={{
                         objectFit: "scale-down",

@@ -35,6 +35,15 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                    <div className="row bfooter ">
+                        <div className="col-md-6 copy">
+                            <p>OXSYS – 2023 © All rights reserved</p>
+                        </div>
+                        <div className="col-md-6 flinks">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
                 </div >
             </footer >
         </>
