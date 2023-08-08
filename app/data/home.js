@@ -78,23 +78,18 @@ export const clients = [{
 
 export const review = [
     {
-        review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-        pname: "Dilip",
-        designation: "Developer"
+        review: "Thanks to OXSYS, we were using about 40 micro liquid medical oxygen cylinders per month, but after installation of OXSYS 1200S it has reduced to 3 to 8 cylinders per month.",
+        doctor: "Dr. Sushma Malik",
+        hospital: "Santom Hospital Pvt.Ltd, Rohini"
     },
     {
-        review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta. ",
-        pname: "Dilip",
-        designation: "Developer"
+        review: "The Oxygen generator has helped us to save our expense considerably, I recommend highly.",
+        doctor: "Dr. D P Singh, Director",
+        hospital: "Aryan Hospital Gorakhpur"
     },
     {
-        review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-        pname: "Dilip",
-        designation: "Developer"
-    },
-    {
-        review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta itaque atque culpa. Dignissimos eius, perferendis ex maiores quibusdam porro inventore cumque repellat numquam nostrum impedit cum? Sint, non soluta.",
-        pname: "Dilip",
-        designation: "Developer"
-    },
+        review: "The generator has helped us saving with convenience, I strongly recommend to hospital owners to experience this product and get benefits.",
+        doctor: "Dr. Pankaj Sirohi, Director",
+        hospital: "Medwin Hospital, Meerut"
+    }
 ]

@@ -136,8 +136,8 @@ export default function Home({ Home }) {
                     <p>{item.review}</p>
 
                     <div className="author">
-                      <h3>{item.pname}</h3>
-                      <p>{item.designation}</p>
+                      <h3>{item.doctor}</h3>
+                      <p>{item.hospital}</p>
                     </div>
                   </div>
                 </SwiperSlide>

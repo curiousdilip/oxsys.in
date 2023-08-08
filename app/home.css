@@ -110,6 +110,7 @@
 #testimonials .reviews .review-box {
     background-color: white;
     padding: 20px;
+    min-height: 240px;
     border-radius: 15px;
 }
 
