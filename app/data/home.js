@@ -255,6 +255,20 @@ export const certificates = [{
 }, {
     src: "/assets/img/certificate/registration.jpg",
     alt: "Certificate of Registration"
+}, {
+    src: "/assets/img/certificate/ISO2015.jpg",
+    alt: "ISO 2015"
+}, {
+    src: "/assets/img/certificate/ISO2016.jpg",
+    alt: "ISO 2016"
+}
+    , {
+    src: "/assets/img/certificate/COCFDA.jpg",
+    alt: "Certificate of Compliance FDA"
+}
+    , {
+    src: "/assets/img/certificate/COCTSN.jpg",
+    alt: "Certificate of Compliance TSN"
 }
 ]
 

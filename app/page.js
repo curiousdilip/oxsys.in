@@ -3,8 +3,8 @@ import { use, useState } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import "./home.css";
-import OXSYSProduct from "../public/assets/img/product/OXSYS-main-product.png";
-import faqImg from "../public/assets/img/product/OXSYS-main-product.png";
+import OXSYSProduct from "../public/assets/img/product/oxsys-main-product.png";
+import faqImg from "../public/assets/img/product/oxsys-main-product.png";
 
 import oxyGen from "../public/assets/img/product/amcoxygenerator.png";
 import PSA from "../public/assets/img/Conventional-PSA-Plant.png";
