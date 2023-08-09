@@ -12,7 +12,7 @@ const Product = ({ layout }) => {
     const product = [
         {
             id: 1,
-            pMainImg: "/assets/img/product/OXSYS-main-product.png",
+            pMainImg: "/assets/img/product/oxsys-main-product.png",
             oxyPure: " 93 ± 3%",
             outFlow: "120 LPM",
             opTemp: "10°C to 52°C",
@@ -27,7 +27,7 @@ const Product = ({ layout }) => {
         },
         {
             id: 2,
-            pMainImg: "/assets/img/product/OXSYS600s.png",
+            pMainImg: "/assets/img/product/oxsys600s.png",
             oxyPure: " 93 ± 3%",
             outFlow: "60 LPM",
             opTemp: "10°C to 45°C / 30% to 85% Rh",
@@ -41,7 +41,7 @@ const Product = ({ layout }) => {
             cytype: "15"
         }, {
             id: 3,
-            pMainImg: "/assets/img/product/OXSYS200s.png",
+            pMainImg: "/assets/img/product/oxsys200s.png",
             oxyPure: " 93 ± 3%",
             outFlow: "20 LPM",
             opTemp: "10°C to 52°C",
