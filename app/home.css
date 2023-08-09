@@ -41,7 +41,7 @@
 }
 
 .hero-content .client p {
-
+    font-size: 14px;
     margin: 0;
     margin-right: 20px;
 }
@@ -51,7 +51,7 @@
 }
 
 #features {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 120px 0;
 }
 
@@ -116,7 +116,7 @@
 
 #products {
     padding: 120px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 
 }
 
@@ -247,7 +247,9 @@
 
 #gallery {
     padding: 120px 0;
-    background: linear-gradient(90deg, #071c4d, #002d97) !important;
+    /* background: linear-gradient(90deg, #071c4d, #002d97) !important; */
+    background-color: #fff;
+
 }
 
 #gallery .section-heading {
@@ -258,11 +260,11 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
-    color: #fff;
+    color: #000;
 }
 
 #gallery .section-heading p {
-    color: #fff;
+    color: #000;
 }
 
 #gallery .gallery .swiper-slide {

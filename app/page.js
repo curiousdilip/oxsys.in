@@ -3,8 +3,8 @@ import { use, useState } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import "./home.css";
-import oxsysProduct from "../public/assets/img/product/oxsys-main-product.png";
-import faqImg from "../public/assets/img/product/oxsys-main-product.png";
+import OXSYSProduct from "../public/assets/img/product/OXSYS-main-product.png";
+import faqImg from "../public/assets/img/product/OXSYS-main-product.png";
 
 import oxyGen from "../public/assets/img/product/amcoxygenerator.png";
 import PSA from "../public/assets/img/Conventional-PSA-Plant.png";
@@ -62,9 +62,9 @@ export default function Home({ Home }) {
                 <div className="row client">
                   <h6>Our Top Clients</h6>
                   <div className=" client-names">
-                    <p>Santom Hospital Prashant</p>
-                    <p>Sanakar Hospital</p>
-                    <p>Medwin Hospital</p>
+                    <p>Santom Hospital, New Delhi</p>
+                    <p>Sanskar Hospital, Bulandsahar</p>
+                    <p>Medwin Hospital, Meerut</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function Home({ Home }) {
             <div className="col-md-6 align-items-center d-flex justify-content-center">
               <div className="product-image">
                 <Image
-                  src={oxsysProduct}
+                  src={OXSYSProduct}
                   alt="Product"
                   className="img-fluid"
                   priority={true}
@@ -90,7 +90,7 @@ export default function Home({ Home }) {
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
                 <h2>Features</h2>
-                <p>Uncover the Remarkable Capabilities of the OxSys System</p>
+                <p>Uncover the Remarkable Capabilities of the OXSYS System</p>
               </div>
             </div>
           </div>
@@ -164,11 +164,81 @@ export default function Home({ Home }) {
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
                 <h2>Products</h2>
-                <p>Our line of Oxsys Machines we offer</p>
+                <p>Our line of OXSYS Generators we offer</p>
               </div>
             </div>
           </div>
           <Product />
+        </div>
+      </section>
+      <section id="compare">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-10 ">
+              <div className="section-heading text-center">
+                <h2>Comparision with Oxygen Plant</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="cpp">
+                <h2 className="text-center">Conventional PSA Plant</h2>
+                <div className="text-center mt-4 mb-4">
+                  <Image
+                    src={PSA}
+                    alt="PSA Plant"
+                    width={700}
+                    height={320}
+                  />
+                </div>
+                <div className="description-box">
+                  <p>
+                    {" "}
+                    Functionality - Linear ( output is dependent on each part)
+                  </p>
+                  <p> PSA Unit - Single</p>
+                  <p> Power Consumption - High</p>
+                  <p> Operating Pressure - Hight ( 8-10 bar)</p>
+                  <p> brealdown Percentage - 100%</p>
+                  <p> Output Pressure - fix(4 to 4.5 bar)</p>
+                  <p> Air Dryer- Required</p>
+                  <p> Compresser - Oil</p>
+                  <p> Portability- not possible ( fixed)</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="our-generator">
+                <h2 className="text-center">
+                  Advance Modular Compact PSA Oxygen Generator
+                </h2>
+                <div className="text-center">
+                  <Image
+                    src={oxyGen}
+                    alt="Advance Modular Compact PSA Oxygen Generator"
+                    width={300}
+                    height={320}
+                  />
+                </div>
+                <div className="description-box mt-1">
+                  <p>
+                    {" "}
+                    Functionality - Parallel (output is independent of every
+                    part)
+                  </p>
+                  <p> PSA Unit - Multiple (5 to 14)</p>
+                  <p> Power consumption - Low (50% of equivalent PSA Plant)</p>
+                  <p> Operating Pressure - very low(2 bar)</p>
+                  <p> brealdown Percentage - upto 30% Maximum</p>
+                  <p> Output Pressure - could be altered (4 to 7.5 bar)</p>
+                  <p> Air Dryer- not Required</p>
+                  <p> Compresser - Oil free</p>
+                  <p> Portability- possible ( on caster wheels)</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="certifications">
@@ -269,10 +339,10 @@ export default function Home({ Home }) {
                 <div className="faq-item mb-5">
                   <h5>
                     <span className="h3 text-primary me-2">1.</span>How does the
-                    OxSys oxygen generator work?
+                    OXSYS oxygen generator work?
                   </h5>
                   <p>
-                    The OxSys oxygen generator utilizes Pressure Swing
+                    The OXSYS oxygen generator utilizes Pressure Swing
                     Adsorption (PSA) technology. Ambient air is drawn into the
                     system and passed through a bed of adsorbent material, which
                     selectively removes nitrogen and other impurities, leaving
@@ -283,7 +353,7 @@ export default function Home({ Home }) {
                 <div className="faq-item mb-5">
                   <h5>
                     <span className="h3 text-primary me-2">2.</span> How much
-                    saving is insured by the largest model of oxsys?
+                    saving is insured by the largest model of OXSYS?
                   </h5>
                   <p className="mb-0">
                     Annually, potential savings of at least 25 Lakh INR can be
@@ -297,7 +367,7 @@ export default function Home({ Home }) {
                     system come with a warranty?
                   </h5>
                   <p>
-                    Yes, OxSys generators are typically covered by a
+                    Yes, OXSYS generators are typically covered by a
                     comprehensive warranty to ensure customers' peace of mind.
                     The specific terms and conditions of the warranty may vary
                     based on the model and region.
@@ -320,7 +390,7 @@ export default function Home({ Home }) {
               <div className="section-heading text-center">
                 <h2>Gallery</h2>
                 <p>
-                  Witness the Installation Process of an OxSys Oxygen Generator.
+                  Witness the Installation Process of an OXSYS Oxygen Generator.
                 </p>
               </div>
             </div>
@@ -338,76 +408,6 @@ export default function Home({ Home }) {
                 index={index}
                 close={() => setIndex(-1)}
               />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="compare">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6 col-md-10 ">
-              <div className="section-heading text-center">
-                <h2>Comparision with Oxygen Plant</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
-              <div className="cpp">
-                <h2 className="text-center">Conventional PSA Plant</h2>
-                <div className="text-center mt-4 mb-4">
-                  <Image
-                    src={PSA}
-                    alt="PSA Plant"
-                    width={700}
-                    height={320}
-                  />
-                </div>
-                <div className="description-box">
-                  <p>
-                    {" "}
-                    Functionality - Linear ( output is dependent on each part)
-                  </p>
-                  <p> PSA Unit - Single</p>
-                  <p> Power Consumption - High</p>
-                  <p> Operating Pressure - Hight ( 8-10 bar)</p>
-                  <p> brealdown Percentage - 100%</p>
-                  <p> Output Pressure - fix(4 to 4.5 bar)</p>
-                  <p> Air Dryer- Required</p>
-                  <p> Compresser - Oil</p>
-                  <p> Portability- not possible ( fixed)</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="our-generator">
-                <h2 className="text-center">
-                  Advance Modular Compact PSA Oxygen Generator
-                </h2>
-                <div className="text-center">
-                  <Image
-                    src={oxyGen}
-                    alt="Advance Modular Compact PSA Oxygen Generator"
-                    width={300}
-                    height={320}
-                  />
-                </div>
-                <div className="description-box mt-1">
-                  <p>
-                    {" "}
-                    Functionality - Parallel (output is independent of every
-                    part)
-                  </p>
-                  <p> PSA Unit - Multiple (5 to 14)</p>
-                  <p> Power consumption - Low (50% of equivalent PSA Plant)</p>
-                  <p> Operating Pressure - very low(2 bar)</p>
-                  <p> brealdown Percentage - upto 30% Maximum</p>
-                  <p> Output Pressure - could be altered (4 to 7.5 bar)</p>
-                  <p> Air Dryer- not Required</p>
-                  <p> Compresser - Oil free</p>
-                  <p> Portability- possible ( on caster wheels)</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -247,11 +247,14 @@ export const gallery = [
 ];
 
 export const certificates = [{
-    src: "/assets/img/certificate/EEC.jpg",
-    alt: "this is sd"
+    src: "/assets/img/certificate/IEC.jpg",
+    alt: "Import Export Certificate"
 }, {
     src: "/assets/img/certificate/UDYAM.jpg",
     alt: "Udyam"
+}, {
+    src: "/assets/img/certificate/registration.jpg",
+    alt: "Certificate of Registration"
 }
 ]
 

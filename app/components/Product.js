@@ -12,7 +12,7 @@ const Product = ({ layout }) => {
     const product = [
         {
             id: 1,
-            pMainImg: "/assets/img/product/oxsys-main-product.png",
+            pMainImg: "/assets/img/product/OXSYS-main-product.png",
             oxyPure: " 93 ± 3%",
             outFlow: "120 LPM",
             opTemp: "10°C to 52°C",
@@ -21,13 +21,13 @@ const Product = ({ layout }) => {
             power: "9kw/h",
             weight: "560kg",
             size: "1660(L)*805(w)*1460(h)*",
-            modelName: "Oxsys 1200s",
+            modelName: "OXSYS 1200s",
             generates: "120 x 60 x 24 = 1,72,000",
             cytype: "30"
         },
         {
             id: 2,
-            pMainImg: "/assets/img/product/oxsys600s.png",
+            pMainImg: "/assets/img/product/OXSYS600s.png",
             oxyPure: " 93 ± 3%",
             outFlow: "60 LPM",
             opTemp: "10°C to 45°C / 30% to 85% Rh",
@@ -36,12 +36,12 @@ const Product = ({ layout }) => {
             power: "4.5kw/h",
             weight: "270kg",
             size: "780(L) * 800(w) * 1455(h) *",
-            modelName: "Oxsys 600s",
+            modelName: "OXSYS 600s",
             generates: "60 x 60 x 24 = 86,000",
             cytype: "15"
         }, {
             id: 3,
-            pMainImg: "/assets/img/product/oxsys200s.png",
+            pMainImg: "/assets/img/product/OXSYS200s.png",
             oxyPure: " 93 ± 3%",
             outFlow: "20 LPM",
             opTemp: "10°C to 52°C",
@@ -50,7 +50,7 @@ const Product = ({ layout }) => {
             power: "2kw/h",
             weight: "80kg",
             size: "1660(L)*805(w)*1460(h)*",
-            modelName: "Oxsys 300s",
+            modelName: "OXSYS 200s",
             generates: "20 x 60 x 24 = 28,800",
             cytype: "5"
         }
@@ -116,8 +116,17 @@ const Product = ({ layout }) => {
             <div className="mobile-products">
                 {product.map((item) => (
                     <div className="row product-box justify-content-between align-items-center" key={item.id}>
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                             <h2>{item.modelName}</h2>
+                            <div className="pimage">
+                                <Image
+                                    src={item.pMainImg}
+                                    alt="Project Banner"
+                                    className="img-fluid"
+                                    width={543}
+                                    height={320}
+                                />
+                            </div>
                             <div className="description-box">
                                 <h3 className="text-center">Specification</h3>
                                 <p>Oxygen Purity : {item.oxyPure}</p>
@@ -135,20 +144,6 @@ const Product = ({ layout }) => {
                             </div>
 
 
-                        </div>
-                        <div className="col-md-6">
-
-                            <div className="pimage">
-
-
-                                <Image
-                                    src={item.pMainImg}
-                                    alt="Project Banner"
-                                    className="img-fluid"
-                                    width={543}
-                                    height={320}
-                                />
-                            </div>
                         </div>
                     </div >
                 ))}
