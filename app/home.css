@@ -158,6 +158,11 @@
 
 #products .product-box .swiper-slide {
     text-align: center;
+    margin-bottom: 30px;
+}
+
+#products .product-box .swiper-slide img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 
@@ -243,6 +248,10 @@
     color: #575757;
 }
 
+#faq img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
 
 
 #gallery {
@@ -285,6 +294,16 @@
 #compare {
     padding: 120px 0;
     background-color: #f8f9fa;
+}
+
+#compare .cpp img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+#compare .our-generator img {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+
 }
 
 #compare .description-box {
