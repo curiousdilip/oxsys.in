@@ -72,18 +72,27 @@ export const galleryImages = [
         src: "/assets/img/gallery/gallery-20.jpg",
     }, {
         src: "/assets/img/gallery/gallery-21.jpg",
-    }, {
-        src: "/assets/img/gallery/gallery-22.jpg",
-    }, {
+    },
+    // {
+    //     src: "/assets/img/gallery/gallery-22.jpg",
+    // }, 
+    {
         src: "/assets/img/gallery/gallery-23.jpg",
-    }, {
-        src: "/assets/img/gallery/gallery-24.jpg",
-    }, {
+    },
+    // }, {
+    //     src: "/assets/img/gallery/gallery-24.jpg",
+    // }, 
+    {
         src: "/assets/img/gallery/gallery-25.jpg",
     }, {
         src: "/assets/img/gallery/gallery-26.jpg",
     }, {
         src: "/assets/img/gallery/gallery-27.jpg",
+    }
+    , {
+        src: "/assets/img/gallery/gallery-28.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-29.jpg",
     }
 
 ]
