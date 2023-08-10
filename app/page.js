@@ -214,12 +214,12 @@ export default function Home({ Home }) {
                   </p>
                   <p> PSA Unit - Single</p>
                   <p> Power Consumption - High</p>
-                  <p> Operating Pressure - Hight ( 8-10 bar)</p>
-                  <p> brealdown Percentage - 100%</p>
-                  <p> Output Pressure - fix(4 to 4.5 bar)</p>
+                  <p> Operating Pressure - High ( 8-10 bar)</p>
+                  <p> Breakdown Percentage - 100%</p>
+                  <p> Output Pressure - Fix(4 to 4.5 bar)</p>
                   <p> Air Dryer- Required</p>
-                  <p> Compresser - Oil</p>
-                  <p> Portability- not possible ( fixed)</p>
+                  <p> Compresser - Oil Lubricated</p>
+                  <p> Portability- Not Possible ( Fixed)</p>
                 </div>
               </div>
             </div>
@@ -239,17 +239,17 @@ export default function Home({ Home }) {
                 <div className="description-box mt-1">
                   <p>
                     {" "}
-                    Functionality - Parallel (output is independent of every
+                    Functionality - Parallel (Output is independent of every
                     part)
                   </p>
                   <p> PSA Unit - Multiple (5 to 14)</p>
                   <p> Power consumption - Low (50% of equivalent PSA Plant)</p>
-                  <p> Operating Pressure - very low(2 bar)</p>
-                  <p> brealdown Percentage - upto 30% Maximum</p>
-                  <p> Output Pressure - could be altered (4 to 7.5 bar)</p>
-                  <p> Air Dryer- not Required</p>
-                  <p> Compresser - Oil free</p>
-                  <p> Portability- possible ( on caster wheels)</p>
+                  <p> Operating Pressure - Very Low(2 bar)</p>
+                  <p> Breakdown Percentage - Upto 30% Max</p>
+                  <p> Output Pressure - Could be altered (4 to 7.5 bar)</p>
+                  <p> Air Dryer- Not Required</p>
+                  <p> Compresser - Oil Free</p>
+                  <p> Portability- Possible ( on caster wheels)</p>
                 </div>
               </div>
             </div>

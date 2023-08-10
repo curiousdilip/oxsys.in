@@ -84,7 +84,7 @@ const Product = ({ layout }) => {
                                     {selectedProductData.generates} litres of oxygen per day.
                                 </h4>
                                 <h4>
-                                    This is equal to usable oxygen of {selectedProductData.cytype} d-type cylinders.
+                                    This is equal to usable oxygen of {selectedProductData.cytype} D-type cylinders.
                                 </h4>
                             </div>
                         )}
@@ -140,7 +140,7 @@ const Product = ({ layout }) => {
                             </div>
                             <div className="benefits">
                                 <h4>A single unit {item.modelName} generates {item.generates} litres of oxygen per day.</h4>
-                                <h4>this is equal to usable oxygen of {item.cytype} d-type cylinders</h4>
+                                <h4>this is equal to usable oxygen of {item.cytype} D-type cylinders</h4>
                             </div>
 
 
