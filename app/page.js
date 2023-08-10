@@ -20,11 +20,22 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import { certificates, clients, gallery, review } from "./data/home";
+import { certificates, clients, gallery, galleryImages, review } from "./data/home";
 
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
+import LightGallery from 'lightgallery/react';
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 
 export default function Home({ Home }) {
   const [index, setIndex] = useState(-1);
@@ -35,6 +46,10 @@ export default function Home({ Home }) {
   }));
 
   const handleClick = (index, item) => setIndex(index);
+
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+  };
   return (
     <>
       <Header />
@@ -397,7 +412,7 @@ export default function Home({ Home }) {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <Gallery
+              {/* <Gallery
                 images={gallery}
                 onClick={handleClick}
                 enableImageSelection={false}
@@ -407,7 +422,36 @@ export default function Home({ Home }) {
                 open={index >= 0}
                 index={index}
                 close={() => setIndex(-1)}
-              />
+              /> */}
+
+              <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail]}
+              >
+                {galleryImages.map((item, index) => (
+
+                  <a href={item.src} key={index}>
+
+
+                    <Image
+                      src={item.src}
+                      alt="Picture of the author"
+                      width={300}// automatically provided
+                      height={300} //automatically provided
+                      blurDataURL="data:..." //automatically provided
+                      placeholder="blur" // Optional blur-up while loading
+                      style={{
+                        objectFit: 'cover'
+                      }}
+                    />
+                  </a>
+
+                ))}
+                {/* </div> */}
+
+
+              </LightGallery>
             </div>
           </div>
         </div>

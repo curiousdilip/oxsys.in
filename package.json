@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
+    "lightgallery": "^2.7.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "18.2.0",
     "react-grid-gallery": "^1.0.0",
     "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.64.2",
     "swiper": "^10.0.4",
     "yet-another-react-lightbox": "^3.12.0"
   }

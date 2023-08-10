@@ -29,7 +29,64 @@
 //     },
 
 // ];
+export const galleryImages = [
+    {
+        src: "/assets/img/gallery/gallery-1.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-2.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-3.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-4.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-5.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-6.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-7.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-8.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-9.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-10.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-11.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-12.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-13.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-14.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-15.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-16.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-17.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-18.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-19.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-20.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-21.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-22.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-23.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-24.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-25.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-26.jpg",
+    }, {
+        src: "/assets/img/gallery/gallery-27.jpg",
+    }
 
+]
 
 export const gallery = [
     {

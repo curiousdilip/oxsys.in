@@ -281,6 +281,12 @@
 }
 
 
+#gallery .lg-react-element {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
 #compare .section-heading {
     margin-bottom: 50px;
 }
@@ -395,12 +401,20 @@
         padding: 60px 0;
     }
 
-    #gallery .gallery img {
+    /* #gallery .gallery img {
         object-fit: contain;
         width: 250px;
         height: 300px;
         border-radius: 20px;
 
+    } */
+
+    #gallery .lg-react-element {
+        grid-template-columns: auto;
+    }
+
+    #gallery .lg-react-element a {
+        text-align: center;
     }
 
     #compare {

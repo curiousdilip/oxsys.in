@@ -21,7 +21,7 @@ const Product = ({ layout }) => {
             power: "9kw/h",
             weight: "560kg",
             size: "1660(L)*805(w)*1460(h)*",
-            modelName: "OXSYS 1200s",
+            modelName: "OXSYS 1200S",
             generates: "120 x 60 x 24 = 1,72,000",
             cytype: "30"
         },
@@ -36,7 +36,7 @@ const Product = ({ layout }) => {
             power: "4.5kw/h",
             weight: "270kg",
             size: "780(L) * 800(w) * 1455(h) *",
-            modelName: "OXSYS 600s",
+            modelName: "OXSYS 600S",
             generates: "60 x 60 x 24 = 86,000",
             cytype: "15"
         }, {
@@ -50,7 +50,7 @@ const Product = ({ layout }) => {
             power: "2kw/h",
             weight: "80kg",
             size: "1660(L)*805(w)*1460(h)*",
-            modelName: "OXSYS 200s",
+            modelName: "OXSYS 200S",
             generates: "20 x 60 x 24 = 28,800",
             cytype: "5"
         }
