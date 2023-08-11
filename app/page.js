@@ -58,7 +58,6 @@ export default function Home({ Home }) {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="hero-content">
-                {/* <h1>A Product of <br />SuVi Enterprises</h1> */}
                 <h1>Advance Modular Compact PSA Oxygen Generator</h1>
                 <p>
                   Experience the Future of Oxygen Generation - Say Goodbye to
