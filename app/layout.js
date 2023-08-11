@@ -1,9 +1,6 @@
 "use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Head from "next/head";
-import ogImage from "../public/assets/img/product/oxsys-main-product.png"
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -30,7 +27,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content={ogImage}
+          content={`https://oxsys-in.vercel.app/assets/img/product/oxsys%20main%20product.png`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -46,6 +43,16 @@ export default function RootLayout({ children }) {
           content={`https://oxsys-in.vercel.app/assets/img/product/oxsys%20main%20product.png`}
 
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ612VHRQ9"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `   window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DZ612VHRQ9');`
+        }}>
+
+        </script>
       </head>
       <body>{children}</body>
     </html>
