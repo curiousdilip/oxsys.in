@@ -5,42 +5,42 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>OXSYS | Economical Reliable Performing</title>
+        <title>OXSYS | Compact Medical Oxygen Generators</title>
         <meta name="robots" content="follow, index" />
         <meta
           name="description"
-          content="A Product of SuVi Enterprises - Medical Equipments Manufacturer and Supplier"
+          content="Founded in 2021, OXSYS excels in Oxygen generation through modular PSA technology. 70% self-manufactured, strong supply chain, medical Oxygen expertise."
         />
         <meta property="og:url" content="https://www.oxsys.in/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name"
-          content="OXSYS | Economical Reliable Performing"
+          content="OXSYS | Compact Medical Oxygen Generators"
         />
         <meta
           property="og:description"
-          content="A Product of SuVi Enterprises - Medical Equipments Manufacturer and Supplier"
+          content="Founded in 2021, OXSYS excels in Oxygen generation through modular PSA technology. 70% self-manufactured, strong supply chain, medical Oxygen expertise."
         />
         <meta
           property="og:title"
-          content="OXSYS | Economical Reliable Performing"
+          content="OXSYS | Compact Medical Oxygen Generators"
         />
         <meta
           property="og:image"
-          content={`https://oxsys-in.vercel.app/assets/img/product/oxsys%20main%20product.png`}
+          content={`https://www.oxsys.in/assets/img/product/oxsys%20main%20product.png`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="OXSYS | Economical Reliable Performing"
+          content="OXSYS | Compact Medical Oxygen Generators"
         />
         <meta
           name="twitter:description"
-          content="A Product of SuVi Enterprises - Medical Equipments Manufacturer and Supplier"
+          content="Founded in 2021, OXSYS excels in Oxygen generation through modular PSA technology. 70% self-manufactured, strong supply chain, medical Oxygen expertise."
         />
         <meta
           name="twitter:image"
-          content={`https://oxsys-in.vercel.app/assets/img/product/oxsys%20main%20product.png`}
+          content={`https://www.oxsys.in/assets/img/product/oxsys%20main%20product.png`}
 
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ612VHRQ9"></script>
