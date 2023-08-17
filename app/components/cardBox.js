@@ -55,24 +55,16 @@ const cardBox = () => {
 
         <>
             {box.map((item) => (
-                <div className="thecard " key={item.id}>
-                    <div className="thefront">
-                        <Image
-                            src={item.cardImg}
-                            width={50}
-                            height={50}
-                            alt={item.cardImgAlt}
-                        />
-                        <h2>{item.cardTitle}</h2>
-                    </div>
-
-                    <div className="theback">
-                        <h2>{item.cardTitle}</h2>
-                        <p>{item.cardDescription}</p>
-                    </div>
-
+                <div className="thecard" key={item.id} data-aos="fade-right">
+                    <Image
+                        src={item.cardImg}
+                        width={50}
+                        height={50}
+                        alt={item.cardImgAlt}
+                    />
+                    <p>{item.cardDescription}</p>
+                    <h2>{item.cardTitle}</h2>
                 </div>
-
             ))}
         </>
     )

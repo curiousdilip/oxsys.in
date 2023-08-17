@@ -1,4 +1,4 @@
-.thecard {
+/* .thecard {
     position: relative;
     width: 250px;
     height: 250px;
@@ -9,7 +9,7 @@
 }
 
 .thecard:hover {
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
     margin-top: -20px;
 }
 
@@ -36,6 +36,12 @@
     margin-top: 20px;
 }
 
+.thefront p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 .theback {
     position: absolute;
     top: 0;
@@ -55,4 +61,39 @@
     align-items: center;
     flex-direction: column;
 
+} */
+
+
+.thecard {
+    background-color: rgba(89, 179, 255, 0.8);
+    padding: 35px 40px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.3s ease-in;
+    position: relative;
+    color: white;
+}
+
+
+.thecard:hover {
+    background: #59b3ff;
+    transform: translateY(-5px) !important;
+    box-shadow: 0px 20px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.thecard h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.thecard p {
+    margin: 0;
+    text-align: center;
 }

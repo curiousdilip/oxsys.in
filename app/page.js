@@ -1,5 +1,5 @@
 "use client";
-import { use, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import "./home.css";
@@ -36,7 +36,9 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-
+// import Animation on library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home({ Home }) {
   const [index, setIndex] = useState(-1);
   const slides = gallery.map(({ original, width, height }) => ({
@@ -47,6 +49,9 @@ export default function Home({ Home }) {
 
   const handleClick = (index, item) => setIndex(index);
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const onInit = () => {
     console.log('lightGallery has been initialized');
   };
@@ -68,19 +73,19 @@ export default function Home({ Home }) {
                   <a className="btn btn-primary me-3" href="tel:+919555256507">
                     Request For Demo
                   </a>
-                  <a className="btn btn-secondary me-3" href="/">
+                  {/* <a className="btn btn-secondary me-3" href="/">
                     Watch Demo
-                  </a>
+                  </a> */}
                 </div>
 
-                <div className="row client">
+                {/* <div className="row client">
                   <h6>Our Top Clients</h6>
                   <div className=" client-names">
                     <p>Santom Hospital, New Delhi</p>
                     <p>Sanskar Hospital, Bulandsahar</p>
                     <p>Medwin Hospital, Meerut</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-md-6 align-items-center d-flex justify-content-center">
@@ -157,7 +162,7 @@ export default function Home({ Home }) {
               className="reviews"
             >
               {review.map((item, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} data-aos="fade-left">
                   <div className="review-box ">
                     <p>{item.review}</p>
 
@@ -195,15 +200,19 @@ export default function Home({ Home }) {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <div className="cpp">
                 <h2 className="text-center">Conventional PSA Plant</h2>
                 <div className="text-center mt-4 mb-4">
                   <Image
                     src={PSA}
                     alt="PSA Plant"
+                    className="img-fluid"
                     width={700}
                     height={320}
+                    style={{
+                      marginTop: "50px"
+                    }}
                   />
                 </div>
                 <div className="description-box">
@@ -231,6 +240,7 @@ export default function Home({ Home }) {
                   <Image
                     src={oxyGen}
                     alt="Advance Modular Compact PSA Oxygen Generator"
+                    // className="img-fluid"
                     width={300}
                     height={320}
                   />
@@ -273,11 +283,11 @@ export default function Home({ Home }) {
                     <Image key={index}
                       src={item.src}
                       alt={item.alt}
-                      width={290}
-                      height={400}
+                      width={200}
+                      height={300}
                       style={{
                         objectFit: "scale-down",
-                      }}
+                      }} data-aos="fade-up"
                     />
                   ))}
                 </div>
@@ -350,7 +360,7 @@ export default function Home({ Home }) {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-5 col-md-12">
               <div className="faq-wrapper">
-                <div className="faq-item mb-5">
+                <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
                     <span className="h3 text-primary me-2">1.</span>How does the
                     OXSYS oxygen generator work?
@@ -364,7 +374,7 @@ export default function Home({ Home }) {
                     stored and made available for various applications.
                   </p>
                 </div>
-                <div className="faq-item mb-5">
+                <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
                     <span className="h3 text-primary me-2">2.</span> How much
                     saving is insured by the largest model of OXSYS?
@@ -375,7 +385,7 @@ export default function Home({ Home }) {
                     47.6 liters) refill rate of INR 300 per cylinder.
                   </p>
                 </div>
-                <div className="faq-item mb-5">
+                <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
                     <span className="h3 text-primary me-2">3.</span> Does the
                     system come with a warranty?
@@ -433,11 +443,11 @@ export default function Home({ Home }) {
                   <a href={item.src} key={index}>
 
 
-                    <Image
+                    <Image data-aos="fade-up"
                       src={item.src}
                       alt="Picture of the author"
-                      width={300}// automatically provided
-                      height={300} //automatically provided
+                      width={200}// automatically provided
+                      height={200} //automatically provided
                       blurDataURL="data:..." //automatically provided
                       placeholder="blur" // Optional blur-up while loading
                       style={{

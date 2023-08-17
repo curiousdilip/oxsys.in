@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name"
-          content="OXSYS | Compact Medical Oxygen Generators"
+          content="OXSYSn | Compact Medical Oxygen Generators"
         />
         <meta
           property="og:description"

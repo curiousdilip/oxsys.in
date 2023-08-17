@@ -1,6 +1,9 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: auto;
 }
+
+
 
 body::-webkit-scrollbar {
     display: none;
@@ -9,6 +12,10 @@ body::-webkit-scrollbar {
 .mainHeader .navbar-toggler {
     color: #fff;
     border: 1px solid #fff;
+}
+
+.container {
+    max-width: 1200px;
 }
 
 .navbar-toggler:focus,
@@ -40,11 +47,14 @@ body::-webkit-scrollbar {
 
 .mainHeader .navbar {
     transition: all .3s ease-in-out;
+    border-bottom: 1px solid #6c757d;
 }
 
 .scrolled .navbar {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
     background-color: white;
+    border-bottom: 1px solid #fff;
+
 }
 
 .scrolled .navbar .nav-link {
@@ -74,10 +84,9 @@ body::-webkit-scrollbar {
 
 .mainHeader .navbar button.btn {
     border-radius: 10px;
-    padding: 10px 28px;
-
+    padding: 10px;
     color: white;
-    /* background-image: url("../../public/assets/img/arrow-up.svg"); */
+    margin-left: 8px;
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -182,5 +191,35 @@ footer .bfooter .flinks a:last-child {
 
     footer .bfooter .flinks {
         text-align: center;
+    }
+}
+
+/* Animation */
+
+@-webkit-keyframes updown {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(15px);
     }
 }

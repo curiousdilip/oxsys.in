@@ -3,7 +3,10 @@
 } */
 #hero {
     height: 100vh;
-    background: linear-gradient(90deg, #071c4d, #002d97) !important;
+    padding-top: 50px;
+    /* background: linear-gradient(90deg, #071c4d, #002d97) !important; */
+    background: linear-gradient(90deg, rgba(7, 28, 77, 1),
+            rgba(0, 45, 151, 1));
 }
 
 .hero-content {
@@ -14,7 +17,6 @@
     justify-content: center;
     height: 100vh;
 }
-
 
 .hero-content h1 {
     font-size: 3rem;
@@ -48,6 +50,7 @@
 
 .product-image img {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    animation: updown 5s infinite linear;
 }
 
 #features {
@@ -222,7 +225,7 @@
 
     gap: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     place-items: center;
     justify-content: end;
 
@@ -250,6 +253,8 @@
 
 #faq img {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    animation: updown 5s infinite linear;
+
 }
 
 
@@ -283,7 +288,7 @@
 
 #gallery .lg-react-element {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
 }
 
@@ -383,6 +388,8 @@
 
     #certifications .certificates {
         grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     #clients {
