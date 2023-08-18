@@ -3,8 +3,6 @@ body {
     overflow-x: auto;
 }
 
-
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -39,14 +37,12 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-
-
 .mainHeader .navbar-brand h3 {
     margin: 0;
 }
 
 .mainHeader .navbar {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in;
     border-bottom: 1px solid #6c757d;
 }
 

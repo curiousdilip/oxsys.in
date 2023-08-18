@@ -1,34 +1,4 @@
-// export const gallery = [
-//     {
-//         src: "/assets/img/gallery/1.jpg",
-//         alt: "Hello"
-//     },
 
-//     {
-//         src: "/assets/img/gallery/2.jpg",
-//         alt: "Hello"
-//     },
-//     {
-//         src: "/assets/img/gallery/3.jpg",
-//         alt: "Hello"
-//     }, {
-//         src: "/assets/img/gallery/4.jpg",
-//         alt: "Hello"
-//     }, {
-//         src: "/assets/img/gallery/5.jpg",
-//         alt: "Hello"
-//     }, {
-//         src: "/assets/img/gallery/6.jpg",
-//         alt: "Hello"
-//     }, {
-//         src: "/assets/img/gallery/7.jpg",
-//         alt: "Hello"
-//     }, {
-//         src: "/assets/img/gallery/8.jpg",
-//         alt: "Hello"
-//     },
-
-// ];
 export const galleryImages = [
     {
         src: "/assets/img/gallery/gallery-1.jpg",

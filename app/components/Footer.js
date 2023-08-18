@@ -1,5 +1,8 @@
 import React from 'react'
 import "../globals.css"
+import logoLight from "../../public/assets/img/oxsys-logo-white.svg"
+import Image from "next/image";
+
 
 const Footer = () => {
     return (
@@ -8,7 +11,12 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
-                            <h3>OXSYS.IN</h3>
+                            <Image
+                                src={logoLight}
+                                alt="Oxsys Logo"
+                                width={180}
+                                height={80}
+                            />
                             <p>A Product SuVi Enterprises <br />Medical Equipments Manufacturer and Supplier</p>
                         </div>
                         <div className="col-md-4">

@@ -73,9 +73,6 @@ export default function Home({ Home }) {
                   <a className="btn btn-primary me-3" href="tel:+919555256507">
                     Request For Demo
                   </a>
-                  {/* <a className="btn btn-secondary me-3" href="/">
-                    Watch Demo
-                  </a> */}
                 </div>
 
                 {/* <div className="row client">
@@ -130,7 +127,7 @@ export default function Home({ Home }) {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
-                <h2>Hear from Satisfied Clients</h2>
+                <h2>Testimonials</h2>
                 <p>
                   Discover What People are Saying About Our Oxygen Generation
                   Solutions
@@ -193,9 +190,9 @@ export default function Home({ Home }) {
       <section id="compare">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6 col-md-10 ">
+            <div className="col-lg-8 col-md-10 ">
               <div className="section-heading text-center">
-                <h2>Comparision with Oxygen Plant</h2>
+                <h2>Comparison with Oxygen Plant</h2>
               </div>
             </div>
           </div>
@@ -348,11 +345,9 @@ export default function Home({ Home }) {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10 ">
               <div className="section-heading text-center">
-                <h2>Frequently Asked Questions</h2>
+                <h2>FAQs</h2>
                 <p>
-                  Credibly grow premier ideas rather than bricks-and-clicks
-                  strategic theme areas distributed for stand-alone
-                  web-readiness.
+                  Frequently Asked Questions
                 </p>
               </div>
             </div>
@@ -362,7 +357,7 @@ export default function Home({ Home }) {
               <div className="faq-wrapper">
                 <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
-                    <span className="h3 text-primary me-2">1.</span>How does the
+                    <span className="h3  me-2">1.</span>How does the
                     OXSYS oxygen generator work?
                   </h5>
                   <p>
@@ -376,7 +371,7 @@ export default function Home({ Home }) {
                 </div>
                 <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
-                    <span className="h3 text-primary me-2">2.</span> How much
+                    <span className="h3  me-2">2.</span> How much
                     saving is insured by the largest model of OXSYS?
                   </h5>
                   <p className="mb-0">
@@ -387,7 +382,7 @@ export default function Home({ Home }) {
                 </div>
                 <div className="faq-item mb-5" data-aos="fade-right">
                   <h5>
-                    <span className="h3 text-primary me-2">3.</span> Does the
+                    <span className="h3 me-2">3.</span> Does the
                     system come with a warranty?
                   </h5>
                   <p>
