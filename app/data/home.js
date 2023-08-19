@@ -1,5 +1,4 @@
-
-export const galleryImages = [
+export const galleryImage = [
     {
         src: "/assets/img/gallery/gallery-1.jpg",
     }, {

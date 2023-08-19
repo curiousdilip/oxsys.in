@@ -22,39 +22,83 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { certificates, clients, gallery, galleryImages, review } from "./data/home";
 
-import { Gallery } from "react-grid-gallery";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-
-import LightGallery from 'lightgallery/react';
-
-// import styles
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-// import plugins if you need
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
-
 // import Animation on library
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Gallery from "./components/gallery";
 export default function Home({ Home }) {
   const [index, setIndex] = useState(-1);
-  const slides = gallery.map(({ original, width, height }) => ({
-    src: original,
-    width,
-    height,
-  }));
+  // const slides = gallery.map(({ original, width, height }) => ({
+  //   src: original,
+  //   width,
+  //   height,
+  // }));
 
-  const handleClick = (index, item) => setIndex(index);
+  // const handleClick = (index, item) => setIndex(index);
 
   useEffect(() => {
     AOS.init();
   }, [])
-  const onInit = () => {
-    console.log('lightGallery has been initialized');
-  };
+
+  const galleryImages = [
+    {
+      src: "/assets/img/gallery/gallery-1.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-2.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-3.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-4.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-5.jpg",
+    },
+    {
+      src: "/assets/img/gallery/gallery-6.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-7.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-8.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-9.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-10.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-11.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-12.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-13.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-14.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-15.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-16.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-17.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-18.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-19.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-20.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-21.jpg",
+    },
+    {
+      src: "/assets/img/gallery/gallery-23.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-25.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-26.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-27.jpg",
+    }
+    , {
+      src: "/assets/img/gallery/gallery-28.jpg",
+    }, {
+      src: "/assets/img/gallery/gallery-29.jpg",
+    }]
   return (
     <>
       <Header />
@@ -63,7 +107,8 @@ export default function Home({ Home }) {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="hero-content">
-                <h1>Advance Modular Compact PSA Oxygen Generator</h1>
+                <h1
+                >Advance Modular Compact PSA Oxygen Generator</h1>
                 <p>
                   Experience the Future of Oxygen Generation - Say Goodbye to
                   Costly Oxygen Cylinders and Embrace Savings with Peace of
@@ -99,7 +144,7 @@ export default function Home({ Home }) {
             </div>
           </div>
         </div>
-      </section>
+      </section >
       <section id="features">
         <div className="container">
           <div className="row justify-content-center">
@@ -159,7 +204,7 @@ export default function Home({ Home }) {
               className="reviews"
             >
               {review.map((item, index) => (
-                <SwiperSlide key={index} data-aos="fade-left">
+                <SwiperSlide key={index}>
                   <div className="review-box ">
                     <p>{item.review}</p>
 
@@ -284,7 +329,7 @@ export default function Home({ Home }) {
                       height={300}
                       style={{
                         objectFit: "scale-down",
-                      }} data-aos="fade-up"
+                      }} data-aos="fade-right"
                     />
                   ))}
                 </div>
@@ -428,12 +473,12 @@ export default function Home({ Home }) {
                 close={() => setIndex(-1)}
               /> */}
 
-              <LightGallery
+              {/* <LightGallery
                 onInit={onInit}
                 speed={500}
                 plugins={[lgThumbnail]}
-              >
-                {galleryImages.map((item, index) => (
+              > */}
+              {/* {galleryImages.map((item, index) => (
 
                   <a href={item.src} key={index}>
 
@@ -451,11 +496,15 @@ export default function Home({ Home }) {
                     />
                   </a>
 
-                ))}
-                {/* </div> */}
+                ))} */}
+              {/* </div> */}
 
 
-              </LightGallery>
+              {/* </LightGallery> */}
+
+              <Gallery
+                galleryImages={galleryImages}
+              />
             </div>
           </div>
         </div>
