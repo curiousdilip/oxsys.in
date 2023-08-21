@@ -225,7 +225,9 @@
 
     gap: 30px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
     place-items: center;
     justify-content: end;
 
