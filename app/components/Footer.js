@@ -18,6 +18,12 @@ const Footer = () => {
                                 height={80}
                             />
                             <p>A Product SuVi Enterprises <br />Medical Equipments Manufacturer and Supplier</p>
+                            <div className="social-links">
+                                <a href="https://www.facebook.com/oxsys.in"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/oxsys.in/"><i class="bi bi-instagram"></i></a>
+                                <a href="https://wa.me/918604387421"><i class="bi bi-whatsapp"></i></a>
+                                <a href="https://goo.gl/maps/j87zF3axrqS39U627" ><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
                         </div>
                         <div className="col-md-4">
                             <h3>Address</h3>

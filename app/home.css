@@ -85,7 +85,7 @@
 }
 
 #testimonials {
-    height: 100vh;
+
     padding: 120px 0;
     /* background: linear-gradient(90deg, #071c4d, #002d97) !important; */
     background: linear-gradient(90deg, rgba(7, 28, 77, 0.8), rgba(0, 45, 151, 0.8)), url("../public/assets/img/gallery/gallery-10.jpg") no-repeat center/cover fixed;
@@ -443,6 +443,16 @@
 
     footer .footer-content span {
         font-size: 10px;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: space-between;
+        /* width: 300px; */
+    }
+
+    footer .social-links i {
+        color: #fff;
     }
 
     footer {

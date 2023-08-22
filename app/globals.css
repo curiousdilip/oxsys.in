@@ -121,6 +121,18 @@ footer {
     color: white;
 }
 
+footer .social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 20px 0;
+}
+
+footer .social-links i {
+    color: #fff;
+    font-size: 30px;
+}
+
 footer .footer-content h3 {
     text-align: center;
 }
@@ -187,6 +199,10 @@ footer .bfooter .flinks a:last-child {
 
     footer .bfooter .flinks {
         text-align: center;
+    }
+
+    footer .social-links {
+        margin: 0 auto;
     }
 }
 
