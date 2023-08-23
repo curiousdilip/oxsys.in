@@ -445,16 +445,6 @@
         font-size: 10px;
     }
 
-    footer .social-links {
-        display: flex;
-        justify-content: space-between;
-        /* width: 300px; */
-    }
-
-    footer .social-links i {
-        color: #fff;
-    }
-
     footer {
         padding: 40px 0;
     }
