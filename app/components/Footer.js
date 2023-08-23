@@ -19,8 +19,9 @@ const Footer = () => {
                             />
                             <p>A Product SuVi Enterprises <br />Medical Equipments Manufacturer and Supplier</p>
                             <div className="social-links">
-                                <a href="https://www.facebook.com/oxsys.in"><i class="bi bi-facebook"></i></a>
-                                <a href="https://www.instagram.com/oxsys.in/"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.facebook.com/oxsysin"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/oxsysin/"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/oxsysin/"><i class="bi bi-linkedin"></i></a>
                                 <a href="https://wa.me/918604387421"><i class="bi bi-whatsapp"></i></a>
                                 <a href="https://goo.gl/maps/j87zF3axrqS39U627" ><i class="bi bi-arrow-up-right"></i></a>
                             </div>
