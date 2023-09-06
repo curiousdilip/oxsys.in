@@ -115,7 +115,7 @@ export default function Home({ Home }) {
                   Mind!
                 </p>
                 <div className="cta-btns mt-5">
-                  <a className="btn btn-primary me-3" href="tel:+919555256507">
+                  <a className="btn btn-primary me-3" href="tel:+9186043874217">
                     Request For Demo
                   </a>
                 </div>
